@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coaching_requests",
+  "info": {
+    "name": "coaching Request",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "initiatedBy": {
+      "type": "enumeration",
+      "enum": [
+        "Coach",
+        "Client"
+      ],
+      "default": "Client",
+      "required": false
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "coaching_request"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "Comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "coaching_request": {
+      "via": "comments",
+      "model": "coaching-request"
+    }
+  }
+}

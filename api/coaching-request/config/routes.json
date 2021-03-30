@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coaching-requests",
+      "handler": "coaching-request.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coaching-requests/count",
+      "handler": "coaching-request.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coaching-requests/:id",
+      "handler": "coaching-request.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coaching-requests",
+      "handler": "coaching-request.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coaching-requests/:id",
+      "handler": "coaching-request.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coaching-requests/:id",
+      "handler": "coaching-request.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
